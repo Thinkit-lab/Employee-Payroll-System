@@ -1,0 +1,24 @@
+server:
+  port: '8000'
+
+spring:
+  security:
+    user:
+      name: test
+      password: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/payrollDB
+    password: '@Gurudesigner1'
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+application:
+  jwt:
+    secretKey: averysecuredkeyvalueforjwtmustbeatleast256bits
+    tokenPrefix: Bearer
+    tokenExpirationAfterDays: 14
+
